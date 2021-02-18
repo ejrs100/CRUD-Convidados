@@ -1,0 +1,21 @@
+
+<nav class = "navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="convidados" routerLinkActive="active" class="nav-link">Lista de convidados</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="create-convidado" routerLinkActive="active" class="nav-link">Adicionar convidado</a>
+        </li>
+    </ul>
+
+</nav>
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+<footer class = "footer">
+    <div class = "container">
+        <span>All rigths reserved 2021 @Eduardo_silva2610</span>
+    </div>
+</footer>

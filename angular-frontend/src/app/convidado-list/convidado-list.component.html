@@ -1,0 +1,21 @@
+<h2> Lista de Convidados </h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Nome </th>
+            <th> Quantidade de Acompanhantes </th>
+            <th> Ações </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let convidado of convidados">
+            <td> {{convidado.nome}} </td>
+            <td> {{convidado.quantidadeAcompanhantes}} </td>
+            <td>
+                <button (click) = "updateConvidado(convidado.id)" class = "btn btn-info">Atualizar</button>
+                <button (click) = "deleteConvidado(convidado.id)" class = "btn btn-danger" style="margin-left: 10px;">Excluir</button>
+                <button (click) = "convidadoDetails(convidado.id)" class = "btn btn-info" style="margin-left: 10px;">Detalhes</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

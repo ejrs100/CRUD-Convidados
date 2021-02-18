@@ -1,0 +1,19 @@
+<div class="col-md-6 offset-md-3">
+<h3> Criar convidado </h3>
+<form (ngSubmit) = "onSubmit()">
+
+    <div class = "form-group">
+        <label> Nome </label>
+        <input type="text" class="form-control" id="nome"
+            [(ngModel)] = "convidado.nome" name="nome">
+    </div>
+
+    <div class = "form-group">
+        <label> Quantidade de Acompanhantes </label>
+        <input type="text" class="form-control" id="quantidadeAcompanhantes"
+            [(ngModel)] = "convidado.quantidadeAcompanhantes" name="quantidadeAcompanhantes">
+    </div>
+
+    <button class="btn btn-success" type="submit"> Enviar </button>
+</form>
+</div>
