@@ -8,6 +8,8 @@ import { CreateConvidadoComponent } from './create-convidado/create-convidado.co
 import { FormsModule } from '@angular/forms';
 import { UpdateConvidadoComponent } from './update-convidado/update-convidado.component';
 import { ConvidadoDetailsComponent } from './convidado-details/convidado-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,13 +17,16 @@ import { ConvidadoDetailsComponent } from './convidado-details/convidado-details
     ConvidadoListComponent,
     CreateConvidadoComponent,
     UpdateConvidadoComponent,
-    ConvidadoDetailsComponent
+    ConvidadoDetailsComponent,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
